@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Mio Sito Scolastico</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            padding: 0 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline lightgreen;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        footer {
+            background: #000000;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+        .project {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Benvenuto nel mio sito scolastico</h1>
+        <p>Studente: Cristiano Tortora | Classe: 5A Informatica | Scuola: I.I.S. Della Corte - Vanvitelli </p>
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Chi Sono</a>
+        <a href="#projects">Progetti</a>
+    </nav>
+    
+    <section id="home">
+        <h2>Home</h2>
+        <p>Benvenuto nel mio sito scolastico. Qui troverai informazioni su di me e i miei progetti.</p>
+    </section>
+    
+    <section id="about">
+        <h2>Chi Sono</h2>
+        <p>Ciao! Mi chiamo Cristiano Tortora e frequento la classe 5A Informatica presso I.I.S. Della Corte- Vanvitelli.</p>
+        <p>I miei interessi sono: Tecnologia,Sport e spingermi sempre oltre.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Progetti Scolastici</h2>
+        
+        <div class="project">
+            <h3>Progetto Sicurezza stradale</h3>
+            <p>Questo è un progetto realizzato da me con altri 2 miei compagni, per la realizazione siamo andati al comando di polizia di Cava de' Tirreni.</p>
+            <p>Per scrivere il rapporto degli incidenti su un file excel, io ho creato un codice python che mi aiutasse a visualizzare la probabilità di incidenti</p>
+            
+            <section id="analytics">
+              <h2>Analisi Statistica Incidenti Stradali</h2>
+              <div class="analytics-container">
+              <div class="data-card">
+              <h3>Dati sugli Incidenti</h3>
+              <div class="table-container">
+                <table id="incident-table">
+                    <thead>
+                        <tr>
+                            <th>Data,</th>
+                            <th>Luogo,</th>
+                            <th>Tipo,</th>
+                            <th>Veicoli,</th>
+                            <th>Feriti.</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- I dati verranno popolati via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="chart-card">
+            <h3>Probabilità per Mese</h3>
+            <div class="chart-container">
+                <canvas id="incident-chart"></canvas>
+            </div>
+        </div>
+    </div>
+    
+    <div class="analytics-footer">
+        <p>Analisi realizzata come progetto scolastico di statistica applicata.</p>
+        <a href="dati_incidenti.xlsx" class="btn" download>Scarica il file Excel</a>
+        <br>
+        <a href="CalcoloProbabilità.zip" download>Scarica il file Python</a>
+    </div>
+        
+</section>
+            
+        </div>
+
+
+        <!--
+         <div class="project">
+            <h3>Titolo Progetto 2</h3>
+            <p>Descrizione del progetto, cosa hai imparato, tecnologie utilizzate.</p>
+         </div>
+        -->
+        
+    </section>
+
+</body>
+</html>
